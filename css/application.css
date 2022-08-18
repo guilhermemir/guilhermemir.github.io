@@ -1,0 +1,34 @@
+/* Cor personalizada */
+:root {
+    --accent-bg: #e9fbf7;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --accent-bg: #3e3e3e;
+    }
+}
+
+/* Foto de perfil */
+main img.profile-picture {
+    width: 30%;
+    float: left;
+    margin-right: 1.5rem;
+}
+
+/* Todo texto do main deve ser justificado */
+main p {
+    text-align: justify;
+}
+
+/* Correção para botão do SimpleCSS */
+a[role="button"],
+a[role="button"]:visited {
+    color: var(--bg);
+    text-decoration: none;
+}
+
+/* Centraliza botões no final da página */
+main > nav {
+    text-align: center;
+}
