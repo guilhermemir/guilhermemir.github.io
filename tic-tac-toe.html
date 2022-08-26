@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+
+    <script src="/js/tic-tac-toe.js" defer></script>
+
+    <link rel="stylesheet" href="/css/simple-v2.1.0.css" />
+    <link rel="stylesheet" href="/css/tic-tac-toe.css">
+</head>
+<body>
+    <h1>Tic Tac Toe</h1>
+
+    <main>
+        <div>
+            <input type="text" id="player1-name" class="game-player-name" placeholder="Write the player 1's name here">
+            <input type="text" id="player2-name" class="game-player-name" placeholder="Write the player 2's name here">
+        </div>
+
+        <h4 id="game-turn"></h4>
+
+        <div class="game-board">
+            <input type="button" value="" data-cell-index="0" class="game-cell" />
+            <input type="button" value="" data-cell-index="1" class="game-cell" />
+            <input type="button" value="" data-cell-index="2" class="game-cell" />
+            <input type="button" value="" data-cell-index="3" class="game-cell" />
+            <input type="button" value="" data-cell-index="4" class="game-cell" />
+            <input type="button" value="" data-cell-index="5" class="game-cell" />
+            <input type="button" value="" data-cell-index="6" class="game-cell" />
+            <input type="button" value="" data-cell-index="7" class="game-cell" />
+            <input type="button" value="" data-cell-index="8" class="game-cell" />
+        </div>
+
+        <h4 id="game-results"></h4>
+        <input type="button" value="Restart" data-cell-index="8" id="game-restart" />
+    </main>
+</body>
+</html>

@@ -1,0 +1,17 @@
+body {
+  text-align: center
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: 306px;
+  margin: 50px auto;
+}
+
+.game-board .game-cell {
+  width: 100px;
+  height: 100px;
+  margin: 0.06rem 0;
+  font-size: 3rem;
+}
