@@ -1,5 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+:root {
+	--accent: #0da17f;
+}
+
 body {
+  background-color: aquamarine;
+  color: red;
   text-align: center
+}
+
+h1 {
+  font-family: 'Play', sans-serif;
+  color: #0c7c62;
+}
+
+.game-player-name {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
 
 .game-board {
@@ -14,4 +31,9 @@ body {
   height: 100px;
   margin: 0.06rem 0;
   font-size: 3rem;
+}
+
+#game-restart {
+  width: 5rem;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }

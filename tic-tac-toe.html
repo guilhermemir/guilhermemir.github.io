@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe</title>
+    <title>TIC TAC T#E</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/tic-tac-toe/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/tic-tac-toe/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/tic-tac-toe/favicon-16x16.png">
+    <link rel="manifest" href="/images/tic-tac-toe/site.webmanifest">
 
     <script src="/js/tic-tac-toe.js" defer></script>
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 
     <link rel="stylesheet" href="/css/simple-v2.1.0.css" />
     <link rel="stylesheet" href="/css/tic-tac-toe.css">
 </head>
 <body>
-    <h1>Tic Tac Toe</h1>
+    <h1>TIC TAC T#E</h1>
 
     <main>
         <div>
-            <input type="text" id="player1-name" class="game-player-name" placeholder="Write the player 1's name here">
-            <input type="text" id="player2-name" class="game-player-name" placeholder="Write the player 2's name here">
+            <input type="text" id="player1-name" class="game-player-name" placeholder="Set player 1's name">
+            <input type="text" id="player2-name" class="game-player-name" placeholder="Set player 2's name">
         </div>
 
         <h4 id="game-turn"></h4>
@@ -37,5 +43,13 @@
         <h4 id="game-results"></h4>
         <input type="button" value="Restart" data-cell-index="8" id="game-restart" />
     </main>
+
+    <footer>
+        <p>
+          <em>Desenvolvido por Guilherme Mir ·
+            <span x-data x-text="new Date().getFullYear()"></span>
+          </em>
+        </p>
+      </footer>
 </body>
 </html>

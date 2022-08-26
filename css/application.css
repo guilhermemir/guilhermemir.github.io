@@ -1,12 +1,11 @@
 /* Cor personalizada */
 :root {
-    --accent-bg: #e9fbf7;
+    --accent-bg: #234966;
+    --accent: #234966;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --accent-bg: #3e3e3e;
-    }
+header {
+    color: whitesmoke;
 }
 
 /* Foto de perfil */
@@ -14,6 +13,8 @@ main img.profile-picture {
     width: 30%;
     float: left;
     margin-right: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 /* Todo texto do main deve ser justificado */
@@ -21,9 +22,14 @@ main p {
     text-align: justify;
 }
 
+main p a {
+    text-decoration: none;
+}
+
 /* Correção para botão do SimpleCSS */
 a[role="button"],
 a[role="button"]:visited {
+    
     color: var(--bg);
     text-decoration: none;
 }
@@ -31,4 +37,14 @@ a[role="button"]:visited {
 /* Centraliza botões no final da página */
 main > nav {
     text-align: center;
+    margin-top: 2.5rem;
+}
+
+figure img {
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+figcaption {
+    margin-bottom: 4rem;
 }

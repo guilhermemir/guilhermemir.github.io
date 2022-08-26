@@ -3,13 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guilherme Mir · Desenvolvedor Web</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/images/site.webmanifest">
+
     <link rel="stylesheet" href="/css/simple-v2.1.0.css" />
     <link rel="stylesheet" href="/css/application.css" />
-    <script
-      defer
-      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
-    ></script>
-    <title>Guilherme Mir</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
   </head>
   <body>
     <header>
@@ -18,63 +23,70 @@
     </header>
 
     <main>
-      <img alt="Guilherme Mir" src="/images/mir.jpg" class="profile-picture" />
+      <img title="Guilherme Mir" alt="Foto de Perfil" src="/images/guilherme-mir.jpg" class="profile-picture" />
       <p>
-        Sou <mark>Desenvolvedor Web</mark> com foco nas tecnologias voltadas ao
-        FrontEnd, em busca de oportunidade para atuar na área. Cursei
-        <mark>Bacharelado em Cinema e Audiovisual</mark> (Faculdade de Artes do
-        Paraná/UNESPAR) e trabalhei com edição e finalização de imagem e motion
-        design.
+        Sou um <strong>Desenvolvedor Web</strong> com foco nas tecnologias voltadas ao
+        FrontEnd, em busca de oportunidade para atuar na área.
       </p>
 
       <p>
-        Como profissional do audiovisual, estou acostumado a trabalhar em uma
+        Cursei <strong>Bacharelado em Cinema e Audiovisual</strong> (Faculdade de Artes do
+        Paraná/UNESPAR) e trabalhei com edição e finalização de imagem e motion
+        design, prestando serviços para diversas produtoras e agências.
+      </p>
+
+      <p>
+        Com a experiência profissional do audiovisual, estou acostumado a trabalhar em uma
         equipe diversificada e a entender as necessidades dos clientes, buscando
         soluções criativas de forma adaptativa. Tenho interesse em desenvolver e
-        aprimorar minhas habilidades profissionais, além de construir novos
+        aprimorar minhas habilidades, além de construir novos
         elos.
       </p>
 
       <nav>
-        <a role="button" href="https://linkedin.com/in/guilhermemir"
-          >LinkedIn</a
+        <a role="button" href="https://linkedin.com/in/guilhermemir" target="_blank">LinkedIn</a
         >
-        <a role="button" href="https://github.com/guilhermemir">GitHub</a>
-        <a role="button" href="mailto:guilherme.mir@gmail.com">E-mail</a>
+        <a role="button" href="https://github.com/guilhermemir" target="_blank">GitHub</a>
+        <a role="button" href="mailto:guilherme.mir@gmail.com" target="_blank">E-mail</a>
       </nav>
 
       <h2>Projetos</h2>
 
       <figure>
-        <img alt="My MTG" src="/images/my-mtg.png" />
+        <a href="/tic-tac-toe.html" target="_blank"><img title="Projeto - TIC TAC T#E" alt="TIC TAC T#E" src="/images/tic-tac-toe.png"></a>
         <figcaption>
-          <strong>My MTG</strong>: Projeto pessoal em Ruby on Rails para
-          gerenciar coleção de Magic: The Gathering.
-        </figcaption>
+          <em>
+            <strong>TIC TAC T#E</strong>: "Jogo da Velha", desenvolvido em JS.
+          </em>
       </figure>
 
       <figure>
-        <a href="/tic-tac-toe.html"><img alt="Tic Tac Toe" src="/images/my-mtg.png"></a>
+        <a href="https://mymtg.onrender.com/" target="_blank"><img title="Projeto - My MTG" alt="My MTG" src="/images/my-mtg.png"></a>
         <figcaption>
-          <strong>Tic Tac Toe</strong>: Jogo da Velha desenvolvido em JS.
+          <em>
+            <strong>My MTG</strong>: Gerenciador para colecionadores de Magic: The Gathering, desenvolvido em Ruby on Rails.
+          </em>
+        </figcaption>
       </figure>
 
       <blockquote>
         <p>
-          I don't want hope. Hope is killing me. My dream is to become hopeless.
-          When you're hopeless, you don't care.
+          The only difference between a date and a job interview is: not many job-interviews is there a chance you'll end up naked at the end of it.
         </p>
         <p>
-          <cite>&mdash; George Costanza </cite>
+          <cite>&mdash; Jerry Seinfeld </cite>
         </p>
       </blockquote>
     </main>
 
     <footer>
       <p>
-        Copyright © Guilherme Mir ·
-        <span x-data x-text="new Date().getFullYear()"></span>
+        <em>Desenvolvido por Guilherme Mir ·
+          <span x-data x-text="new Date().getFullYear()"></span>
+        </em>
       </p>
     </footer>
+
+    <a class="github-fork-ribbon" href="https://linkedin.com/in/guilhermemir" target="_blank" data-ribbon="Me dê uma chance!" title="Me dê uma chance!">Me dê uma chance!</a>
   </body>
 </html>

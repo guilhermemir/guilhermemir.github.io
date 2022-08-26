@@ -52,7 +52,7 @@ const checkWinner = () => {
   winner = whoWon()
   if (winner) {
     gameOver = true
-    document.getElementById("game-results").innerHTML = `Winner was ${playerName(winner)}`
+    document.getElementById("game-results").innerHTML = `&#x1F389; Winner was ${playerName(winner)}! &#x1F389;`
   } else {
     document.getElementById("game-results").innerHTML = ``
   }
@@ -93,7 +93,7 @@ const changePlayer = () => {
 
 // Show which player is the current turn
 const showCurrentPlayer = () => {
-  document.getElementById("game-turn").innerHTML = gameOver ? "" : `${playerName(currentPlayer)}'s turn`
+  document.getElementById("game-turn").innerHTML = gameOver ? "" : `&#x270D; ${playerName(currentPlayer)}'s turn...`
 }
 
 // Returns the name of the given player
